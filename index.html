@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVEAWAY SCRIPT PREMIUM DARI PAHAJI</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #ff416c;
+            padding: 40px 20px;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .highlight {
+            font-size: 1.5em;
+            color: #ff416c;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 20px 40px;
+            background: #ff416c;
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        .form-section {
+            margin: 40px 0;
+        }
+        input[type="text"] {
+            padding: 15px;
+            width: 80%;
+            max-width: 400px;
+            font-size: 1.2em;
+            border: 2px solid #ff416c;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .note {
+            font-style: italic;
+            color: #666;
+            margin-top: 30px;
+        }
+        footer {
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 50px;
+        }
+        .emoji {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 GIVEAWAY SCRIPT PREMIUM GRATIS DARI PAHAJI 🎉</h1>
+        <p class="highlight">JANGAN LEWATKAN! EVENT CAPCUT YEAR-END CASH SEDANG BERAKHIR!</p>
+    </header>
+
+    <div class="container">
+        <h2>Syarat Ikutan Giveaway Script Premium Pahaji</h2>
+        <p>Bro, kesempatan emas nih! Pahaji lagi bagi-bagi script premium gratis. Syaratnya gampang banget:</p>
+        <ol style="text-align: left; max-width: 600px; margin: 20px auto;">
+            <li><strong>TAP / KLIK LINK INI DULUAN:</strong> Bantu CapCut event year-end cash-nya biar dapet reward! (Event lagi wrapping up soon, buruan!)</li>
+            <li>Klik tombol besar di bawah untuk apply.</li>
+            <li>Sebutkan nama lu di form biar Pahaji bisa list dan nanti langsung arahin ke WA otomatis!</li>
+        </ol>
+
+        <a href="https://www.capcut.com/tv2/ZSPWBFKp8/" class="button" target="_blank">
+            🔥 CLICK UNTUK TAP LINK & BANTU CAPCUT 🔥
+        </a>
+
+        <div class="form-section">
+            <h2>Sebutkan Nama Kamu Di Sini</h2>
+            <p>Biar Pahaji catat dan langsung hubungi via WA kalo lu masuk list pemenang!</p>
+            <input type="text" placeholder="Masukkan Nama Kamu Di Sini..." id="nama">
+            <br>
+            <button class="button" onclick="submitNama()">SUBMIT NAMA & APPLY SEKARANG!</button>
+        </div>
+
+        <p class="note">Pokoknya yang rajin tap link dan submit nama, peluang menang lebih besar! Good luck bro! 🚀</p>
+        <p class="emoji">💰🎁🔥</p>
+    </div>
+
+    <footer>
+        &copy; 2025 Giveaway Pahaji - Semua hak cipta dilindungi. Event ini supported by CapCut Year-End Cash Event.
+    </footer>
+
+    <script>
+        function submitNama() {
+            const nama = document.getElementById('nama').value.trim();
+            if (nama === '') {
+                alert('Isi nama dulu bro!');
+                return;
+            }
+
+            // Ganti NOMOR_WA_ANDA dengan nomor WA Pahaji (format internasional, contoh: 6281234567890 tanpa spasi/tanda)
+            const nomorWA = 'NOMOR_WA_ANDA'; 
+
+            // Pesan pre-filled otomatis dengan nama yang dimasukkan
+            const pesan = encodeURIComponent(`Halo Pahaji! Nama saya ${nama}\nSaya ikutan giveaway script premium\nSudah tap link CapCut: https://www.capcut.com/tv2/ZSPWBFKp8/\nMohon di-list ya bro! 🚀`);
+
+            const linkWA = `https://wa.me/${nomorWA}?text=${pesan}`;
+
+            // Buka WA dengan pesan otomatis
+            window.open(linkWA, '_blank');
+
+            // Optional: Buka link CapCut juga biar pasti di-tap
+            window.open('https://www.capcut.com/tv2/ZSPWBFKp8/', '_blank');
+
+            alert(`Succes bro! Chat WA ke Pahaji sudah terbuka dengan nama ${nama} otomatis terisi.\nKirim aja pesannya, nanti di-list! 🔥`);
+        }
+    </script>
+</body>
+</html>
